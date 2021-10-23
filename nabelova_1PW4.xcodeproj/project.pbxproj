@@ -13,6 +13,9 @@
 		092381752724461C008423AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 092381732724461C008423AE /* Main.storyboard */; };
 		092381772724461D008423AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 092381762724461D008423AE /* Assets.xcassets */; };
 		0923817A2724461D008423AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 092381782724461D008423AE /* LaunchScreen.storyboard */; };
+		0923818A27248010008423AE /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0923818927248010008423AE /* NoteCell.swift */; };
+		094A02F127248CEE00730FD5 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094A02F027248CEE00730FD5 /* NoteViewController.swift */; };
+		09FD13C42724C4E300B15042 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD13C32724C4E300B15042 /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		092381762724461D008423AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		092381792724461D008423AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0923817B2724461D008423AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0923818927248010008423AE /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		094A02F027248CEE00730FD5 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		09FD13C32724C4E300B15042 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				092381762724461D008423AE /* Assets.xcassets */,
 				092381782724461D008423AE /* LaunchScreen.storyboard */,
 				0923817B2724461D008423AE /* Info.plist */,
+				0923818927248010008423AE /* NoteCell.swift */,
+				094A02F027248CEE00730FD5 /* NoteViewController.swift */,
+				09FD13C32724C4E300B15042 /* Note.swift */,
 			);
 			path = nabelova_1PW4;
 			sourceTree = "<group>";
@@ -140,6 +149,9 @@
 				092381722724461C008423AE /* ViewController.swift in Sources */,
 				0923816E2724461C008423AE /* AppDelegate.swift in Sources */,
 				092381702724461C008423AE /* SceneDelegate.swift in Sources */,
+				094A02F127248CEE00730FD5 /* NoteViewController.swift in Sources */,
+				0923818A27248010008423AE /* NoteCell.swift in Sources */,
+				09FD13C42724C4E300B15042 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
