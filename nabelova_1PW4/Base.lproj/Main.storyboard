@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eGu-D6-Izy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eGu-D6-Izy">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -21,10 +22,10 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="750"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ujf-9X-nlh">
-                                    <size key="itemSize" width="335" height="98"/>
+                                    <size key="itemSize" width="344" height="146"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="30" minY="15" maxX="30" maxY="15"/>
                                 </collectionViewFlowLayout>
                                 <view key="backgroundView" contentMode="scaleToFill" id="J4V-Co-eZx">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="750"/>
@@ -47,20 +48,26 @@
                                 </view>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NoteCell" id="ROY-2U-NY4" customClass="NoteCell" customModule="nabelova_1PW4" customModuleProvider="target">
-                                        <rect key="frame" x="39.5" y="0.0" width="335" height="98"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="EJ3-Gv-9C5">
-                                            <rect key="frame" x="0.0" y="0.0" width="335" height="98"/>
+                                        <rect key="frame" x="35" y="15" width="344" height="146"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="EJ3-Gv-9C5">
+                                            <rect key="frame" x="0.0" y="0.0" width="344" height="146"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJI-cY-399">
-                                                    <rect key="frame" x="35" y="18" width="42" height="21"/>
+                                                    <rect key="frame" x="35" y="18" width="51" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jss-32-2pX">
+                                                    <rect key="frame" x="35" y="100.5" width="42" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" systemColor="systemGray2Color"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iub-w6-ebG">
-                                                    <rect key="frame" x="35" y="57" width="42" height="21"/>
+                                                    <rect key="frame" x="35" y="58.5" width="51" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -70,20 +77,31 @@
                                                 <constraint firstAttribute="trailing" secondItem="iub-w6-ebG" secondAttribute="trailing" constant="258" id="3Qe-vj-EK5"/>
                                                 <constraint firstItem="FJI-cY-399" firstAttribute="leading" secondItem="EJ3-Gv-9C5" secondAttribute="leading" constant="35" id="6WL-xI-03T"/>
                                                 <constraint firstAttribute="trailing" secondItem="FJI-cY-399" secondAttribute="trailing" constant="258" id="DjQ-Ik-DRb"/>
-                                                <constraint firstAttribute="bottom" secondItem="iub-w6-ebG" secondAttribute="bottom" constant="20" symbolic="YES" id="OJi-Qv-fSV"/>
+                                                <constraint firstAttribute="bottom" secondItem="jss-32-2pX" secondAttribute="bottom" constant="25" id="FLN-QW-Pzb"/>
+                                                <constraint firstItem="iub-w6-ebG" firstAttribute="topMargin" secondItem="FJI-cY-399" secondAttribute="bottom" constant="16" id="Lhd-vX-Q3t"/>
+                                                <constraint firstItem="jss-32-2pX" firstAttribute="top" secondItem="iub-w6-ebG" secondAttribute="bottom" constant="20" id="OJi-Qv-fSV"/>
+                                                <constraint firstItem="jss-32-2pX" firstAttribute="leading" secondItem="EJ3-Gv-9C5" secondAttribute="leading" constant="35" id="QaZ-WW-72k"/>
                                                 <constraint firstItem="iub-w6-ebG" firstAttribute="leading" secondItem="EJ3-Gv-9C5" secondAttribute="leading" constant="35" id="UNz-UQ-ZRZ"/>
-                                                <constraint firstItem="iub-w6-ebG" firstAttribute="top" secondItem="FJI-cY-399" secondAttribute="bottom" constant="18" id="YxT-wn-gJE"/>
+                                                <constraint firstItem="iub-w6-ebG" firstAttribute="top" secondItem="FJI-cY-399" secondAttribute="bottom" constant="20" id="YxT-wn-gJE"/>
+                                                <constraint firstAttribute="trailing" secondItem="jss-32-2pX" secondAttribute="trailing" constant="267" id="f0T-Gg-gt5"/>
                                                 <constraint firstItem="iub-w6-ebG" firstAttribute="top" secondItem="FJI-cY-399" secondAttribute="bottom" constant="18" id="nR1-nC-lzV"/>
                                                 <constraint firstItem="FJI-cY-399" firstAttribute="top" secondItem="EJ3-Gv-9C5" secondAttribute="top" constant="18" id="t3S-nx-Vwq"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="nR1-nC-lzV"/>
+                                                    <exclude reference="Lhd-vX-Q3t"/>
+                                                </mask>
+                                            </variation>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="335" height="98"/>
+                                        <size key="customSize" width="344" height="146"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="15"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <outlet property="creationDateLabel" destination="jss-32-2pX" id="1on-1D-XFC"/>
                                             <outlet property="descriptionLabel" destination="iub-w6-ebG" id="a47-eR-r0G"/>
                                             <outlet property="titleLabel" destination="FJI-cY-399" id="Aib-Js-yfH"/>
                                         </connections>
@@ -181,6 +199,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

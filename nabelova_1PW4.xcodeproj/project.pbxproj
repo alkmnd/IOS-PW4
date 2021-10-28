@@ -15,7 +15,9 @@
 		0923817A2724461D008423AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 092381782724461D008423AE /* LaunchScreen.storyboard */; };
 		0923818A27248010008423AE /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0923818927248010008423AE /* NoteCell.swift */; };
 		094A02F127248CEE00730FD5 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094A02F027248CEE00730FD5 /* NoteViewController.swift */; };
-		09FD13C42724C4E300B15042 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD13C32724C4E300B15042 /* Note.swift */; };
+		09FD13C72724C8F900B15042 /* CoreDataNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09FD13C52724C8F900B15042 /* CoreDataNotes.xcdatamodeld */; };
+		09FD13D22724D24300B15042 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD13D02724D24300B15042 /* Note+CoreDataClass.swift */; };
+		09FD13D32724D24300B15042 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD13D12724D24300B15042 /* Note+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +31,9 @@
 		0923817B2724461D008423AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0923818927248010008423AE /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		094A02F027248CEE00730FD5 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
-		09FD13C32724C4E300B15042 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		09FD13C62724C8F900B15042 /* CoreDataNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataNotes.xcdatamodel; sourceTree = "<group>"; };
+		09FD13D02724D24300B15042 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
+		09FD13D12724D24300B15042 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 		0923816C2724461C008423AE /* nabelova_1PW4 */ = {
 			isa = PBXGroup;
 			children = (
+				09FD13D02724D24300B15042 /* Note+CoreDataClass.swift */,
+				09FD13D12724D24300B15042 /* Note+CoreDataProperties.swift */,
 				0923816D2724461C008423AE /* AppDelegate.swift */,
 				0923816F2724461C008423AE /* SceneDelegate.swift */,
 				092381712724461C008423AE /* ViewController.swift */,
@@ -71,7 +77,7 @@
 				0923817B2724461D008423AE /* Info.plist */,
 				0923818927248010008423AE /* NoteCell.swift */,
 				094A02F027248CEE00730FD5 /* NoteViewController.swift */,
-				09FD13C32724C4E300B15042 /* Note.swift */,
+				09FD13C52724C8F900B15042 /* CoreDataNotes.xcdatamodeld */,
 			);
 			path = nabelova_1PW4;
 			sourceTree = "<group>";
@@ -147,11 +153,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				092381722724461C008423AE /* ViewController.swift in Sources */,
+				09FD13D32724D24300B15042 /* Note+CoreDataProperties.swift in Sources */,
+				09FD13D22724D24300B15042 /* Note+CoreDataClass.swift in Sources */,
 				0923816E2724461C008423AE /* AppDelegate.swift in Sources */,
 				092381702724461C008423AE /* SceneDelegate.swift in Sources */,
 				094A02F127248CEE00730FD5 /* NoteViewController.swift in Sources */,
+				09FD13C72724C8F900B15042 /* CoreDataNotes.xcdatamodeld in Sources */,
 				0923818A27248010008423AE /* NoteCell.swift in Sources */,
-				09FD13C42724C4E300B15042 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +359,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		09FD13C52724C8F900B15042 /* CoreDataNotes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				09FD13C62724C8F900B15042 /* CoreDataNotes.xcdatamodel */,
+			);
+			currentVersion = 09FD13C62724C8F900B15042 /* CoreDataNotes.xcdatamodel */;
+			path = CoreDataNotes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 092381622724461C008423AE /* Project object */;
 }
